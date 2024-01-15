@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    .row{ /* toutes les lignes */
+	text-align: center;
+	line-height: 40px; /* hauteur de la ligne */
+}
+[class*="col-"] { /* tous les attributs class = à %col-% */
+  	border: 2px solid black;
+  	border-radius: 6px; /* angles arrondis */
+} 
+[class*="-1"] { /* tous les attributs class = à %-4% */
+	background-color: yellow;
+}
+[class*="-2"] { /* tous les attributs class = à %-8% */
+  	background-color: yellow;
+}
+[class*="-3"] { /* tous les attributs class = à %-8% */
+  	background-color: yellow;
+}
+[class*="-4"] { /* tous les attributs class = à %-4% */
+	background-color: aqua;
+}
+[class*="-6"] { /* tous les attributs class = à %-8% */
+  	background-color: aquamarine;
+}
+[class*="-8"] { /* tous les attributs class = à %-8% */
+  	background-color: pink;
+}
+[class*="-10"] { /* tous les attributs class = à %-8% */
+  	background-color: turquoise;
+}
+[class*="-12"] { /* tous les attributs class = à %-8% */
+  	background-color: lightgreen;
+}
+
+  </style>
+</head>
+
+  <h1>Bonjour !</h1>
+
+  <p id="largeur"></p>
+  <div class="container">
+    
+    <div class="row"><!--ligne 1-->
+      <div class="col-md-12">Bloc 1 : 12 colonnes
+      </div><!--col-md-12-->
+    </div><!--ligne 1-->
+
+    <div class="row"><!--ligne 2-->
+      <div class="col-md-8">Bloc 2 : 8 colonnes
+        <div class="row"><!--ligne 3 dans col-md-8 -->
+          <div class="col-md-4">Bloc 2.1 : 4 colonnes</div>
+          <div class="col-md-6 md-offset-2">Bloc 2.2 : 6 colonnes
+            <div class="row"><!--ligne 3 dans col-md-6 -->
+              <div class="col-md-3 md-offset-1">Bloc 2.1.1 : 3 colonnes</div>
+              <div class="col-md-5 md-offset-1">Bloc 2.1.1 : 5 colonnes</div>
+            </div>
+          </div>
+        </div><!--ligne dans col-md-8 -->
+      </div><!--col-md-8-->
+      <div class="col-md-4">Bloc 3 : 4 colonnes</div>
+    </div>
+  </div>
+
+</body>
+</html>

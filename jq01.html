@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        .mondiv {
+            width:400px; height:100px; border: 1px solid black; 
+         }
+
+         .efface {
+            display:none;
+         }
+
+    </style>
+</head>
+<body>
+
+   <button id="btn1">bouton1</button>
+    
+    <div id="id1" class="mondiv">
+        ici mondiv1
+    </div>
+
+    <div id="id2" class="mondiv">
+        ici mondiv2
+    </div>
+  
+    <script>
+        $(document).ready(function() {
+
+            // document.getElementById("btn1").addEventListener("click", function(){})
+            // $("#btn1").click( function(e) { 
+            //     $(".mondiv").toggle(1000);
+            // });
+
+            $("#btn1").click( function(e) { 
+            // JS ->    document.getElementById("#id1").innerText = "UN TEXTE"
+                $("#id1").text("UN TEXTE")
+             // JS ->    document.getElementById("#id1").innerHTML = "<i>un texte html </i>"  
+                $("#id2").html("<i>un texte html <i>")
+            })
+       
+       
+       
+        })
+    </script>
+</body>
+</html>

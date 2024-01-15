@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+      #mondiv {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      #p1 {
+        width: 200px;
+        height: 200px; border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mondiv">un paragraphe</div>
+    <p id="p1">un paragraphe </p>
+    
+    <script>
+      $(document).ready(function () {
+    
+       $("#mondiv").on({
+        mouseover: function(event) {
+              $(this).css("background-color", "yellow")
+        },
+        mouseout: function(event) {
+              $(this).css("background-color", "red")
+        },
+        click: function(event) {
+         $(this).css("background-color", "black")
+        }
+      }) 
+
+      $("#p1").on("mouseout mouseover click",function(){
+        console.log("la souris entre ou sort de p#p1")
+      })
+
+      /* 
+
+EVENTS:
+blur
+change
+click
+dblclick
+error
+focus
+keydown
+keypress
+keyup
+load
+mousedown
+mousemove
+mouseout
+mouseover
+mouseup
+resize
+scroll
+select
+submit
+unload
+*/
+
+
+      });
+    </script>
+  </body>
+</html>

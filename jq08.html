@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+      
+         #test2 { width:100px ; height:100px; background-color: aquamarine; 
+          position:absolute; }
+          button { color:red ;}
+        
+    </style>
+     
+    </style>
+  </head>
+  <body>
+   <button>vide</button>
+    <div id="test2">ici</div>
+
+    <script>
+      $(document).ready(function () {
+
+        $("button").click(function () {
+              $("#test2").empty();
+          })
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        .mondiv {
+            width:400px; height:100px; border: 1px solid black; 
+         }
+
+         .efface {
+            display:none;
+         }
+
+    </style>
+</head>
+<body>
+    <button>ok</button>
+    <div>
+         <img id="im1" />
+         <a>google.fr</a>
+   </div>
+   
+    <script>
+        $(document).ready(function() {
+       
+            $("button").click(function() {
+                // ajoute un attribut src dans la balise img
+                $("#im1").attr("src","url_image")
+
+        })
+        })
+    </script>
+</body>
+</html>
